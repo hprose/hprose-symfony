@@ -14,7 +14,7 @@
  *                                                        *
  * hprose symfony http service class for php 5.3+         *
  *                                                        *
- * LastModified: Jul 18, 2016                             *
+ * LastModified: Jul 22, 2016                             *
  * Author: Ma Bingyao <andot@hprose.com>                  *
  *                                                        *
 \**********************************************************/
@@ -22,13 +22,13 @@
 namespace Hprose\Symfony;
 
 class Service extends \Hprose\Http\Service {
-    protected function header($name, $value, $context) {
+    public function header($name, $value, $context) {
         $context->response->headers->set($name, $value);
     }
-    protected function getAttribute($name, $context) {
+    public function getAttribute($name, $context) {
         return $context->request->server->get($name);
     }
-    protected function hasAttribute($name, $context) {
+    public function hasAttribute($name, $context) {
         return $context->request->server->has($name);
     }
     protected function readRequest($context) {
@@ -41,13 +41,13 @@ class Service extends \Hprose\Http\Service {
         $context->session = $request->getSession();
         return $context;
     }
-    protected function writeResponse($data, $context) {
+    public function writeResponse($data, $context) {
         echo $context->response->setContent($data);
     }
-    protected function isGet($context) {
+    public function isGet($context) {
         return $context->request->isMethod('GET');
     }
-    protected function isPost($context) {
+    public function isPost($context) {
         return $context->request->isMethod('POST');
     }
 }
