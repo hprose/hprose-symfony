@@ -14,7 +14,7 @@
  *                                                        *
  * hprose symfony http service class for php 5.3+         *
  *                                                        *
- * LastModified: Jul 22, 2016                             *
+ * LastModified: Jun 21, 2017                             *
  * Author: Ma Bingyao <andot@hprose.com>                  *
  *                                                        *
 \**********************************************************/
@@ -35,7 +35,7 @@ class Service extends \Hprose\Http\Service {
         return $context->request->getContent();
     }
     public function writeResponse($data, $context) {
-        echo $context->response->setContent($data);
+        $context->response->setContent($data);
     }
     public function isGet($context) {
         return $context->request->isMethod('GET');
