@@ -1,7 +1,7 @@
 # Hprose for Symfony
 
 [![Build Status](https://travis-ci.org/hprose/hprose-symfony.svg?branch=master)](https://travis-ci.org/hprose/hprose-symfony)
-![Supported PHP versions: 5.3 .. 7.1](https://img.shields.io/badge/php-5.3~7.1-blue.svg)
+![Supported PHP versions: 5.3 .. 7.3](https://img.shields.io/badge/php-5.3~7.3-blue.svg)
 [![Packagist](https://img.shields.io/packagist/v/hprose/hprose-symfony.svg)](https://packagist.org/packages/hprose/hprose-symfony)
 [![Packagist Download](https://img.shields.io/packagist/dm/hprose/hprose-symfony.svg)](https://packagist.org/packages/hprose/hprose-symfony)
 [![License](https://img.shields.io/packagist/l/hprose/hprose-symfony.svg)](https://packagist.org/packages/hprose/hprose-symfony)

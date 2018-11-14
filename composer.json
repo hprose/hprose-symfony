@@ -46,8 +46,7 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "hprose/hprose": ">=2.0.0",
-        "symfony/symfony": "*"
+        "hprose/hprose": ">=2.0.0"
     },
     "suggest": {
         "ext-hprose": "Faster serialize and unserialize hprose extension."
